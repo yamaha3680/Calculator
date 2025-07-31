@@ -1,5 +1,5 @@
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-import CalculatorWidget from './widgets/CalculatorWidget';
+import CalculatorWidget from './src/widgets/CalculatorWidget';
 
 function App() {
   return (
