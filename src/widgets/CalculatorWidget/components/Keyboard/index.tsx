@@ -1,8 +1,8 @@
 import { StyleSheet, View } from 'react-native';
 import { KeyButton } from '../KeyButton';
-import { FC } from 'react';
+import { FC, memo } from 'react';
 
-export const Keyboard: FC<KeyboardProps> = ({
+const Keyboard: FC<KeyboardProps> = ({
   addChar,
   clear,
   deleteChar,
@@ -64,3 +64,5 @@ interface KeyboardProps {
   clear: () => void;
   setResult: () => void;
 }
+
+export default memo(Keyboard);
